@@ -1,24 +1,45 @@
-# README
+# STUDENTS BLOG - INDEPENDENT PROJECT
+#### By Bang Nguyen
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### This app allows users to sign up and post an article or a writing on the homepage and other users can comment on it.
 
-Things you may want to cover:
 
-* Ruby version
+### Installation
+In the terminal, run the following commands:
+* Repo clone to your local computer
+```
+git clone url of the repository
+```
 
 * System dependencies
+```
+bundle install
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
+* Database creation - Create test and development databases
+```
+$ rails db:create
+```
+```
+$ rails db:migrate
+```
+```
+$ rails db:test:prepare
+```
+* In a new terminal, start the postgres server:
+```
+$ postgres
+```
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* How to start the rails server
 
-* ...
+Start
+```
+$ rails server
+```
+View the default page served by navigating to:
+```
+localhost:3000
+```

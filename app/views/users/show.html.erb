@@ -1,1 +1,5 @@
-<h2>User Show Page When Logged In</h2>
+<%= link_to 'Add Post', new_user_post_path(@user), id: 'new_user_post_link', remote: true, method: 'get', class: 'btn btn-success' %>
+
+<div id="post_show">
+  <%= render "posts/show" %>
+</div>
