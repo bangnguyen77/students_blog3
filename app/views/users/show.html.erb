@@ -1,5 +1,10 @@
-<%= link_to 'Add Post', new_user_post_path(@user), id: 'new_user_post_link', remote: true, method: 'get', class: 'btn btn-success' %>
+<div class="row">
+  <div class="col-xs-6">
+    <div id="post_show">
+      <%= render "posts/show" %>
+    </div>
+    <%= link_to 'Add Post', new_user_post_path(@user), id: 'new_user_post_link', remote: true, method: 'get', class: 'btn btn-success' %>
+  </div>
 
-<div id="post_show">
-  <%= render "posts/show" %>
+
 </div>

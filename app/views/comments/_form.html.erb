@@ -1,0 +1,7 @@
+<%= form_for [@user, @comment], remote :true do |f| %>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.submit class: 'btn btn-info' %>
+<% end %>

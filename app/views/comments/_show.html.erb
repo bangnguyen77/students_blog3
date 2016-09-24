@@ -1,0 +1,6 @@
+<% if @user.comments.any? %>
+  <% @user.comments.each do |comment| %>
+    <h4><%= comment.username %></h4>
+    <p><%= comment.content %></p>
+  <% end %>
+<% end %>
