@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "the add a post process" do
-  it "adds a new post" do
+  it "adds a new post", :js => true do
     user = FactoryGirl.create(:user)
     visit new_user_session_path
     fill_in 'Email', :with => 'abc@gmail.com'
